@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <!-- Console Appender (logs to console) -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1} - %msg%n" />
+        </Console>
+
+        <!-- File Appender (logs to a file) -->
+        <File name="FileLogger" fileName="C:\Users\ksenveka\Downloads\Multithreading_3\src\main\java\com\ehu\task3\logs\app.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1} - %msg%n" />
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <!-- Root Logger -->
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+        </Root>
+
+        <!-- Specific Logger for Producers & Consumers -->
+        <Logger name="com.ehu.task1" level="DEBUG" additivity="false">
+            <AppenderRef ref="FileLogger"/>
+        </Logger>
+    </Loggers>
+</Configuration>

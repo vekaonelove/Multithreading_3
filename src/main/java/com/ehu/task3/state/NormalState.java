@@ -1,7 +1,7 @@
-package org.example.state;
+package com.ehu.task3.state;
 
-import org.example.Currency;
-import org.example.Participant;
+import com.ehu.task3.entity.Currency;
+import com.ehu.task3.entity.Participant;
 
 public class NormalState implements ParticipantState {
     @Override
@@ -9,7 +9,7 @@ public class NormalState implements ParticipantState {
         switch (currency) {
             case TUG:
                 if (participant.getTugBalance() + amount < 0) return false;
-                participant.setTugBalance(participant.getTugBalance() + amount);  // Fix assignment here
+                participant.setTugBalance(participant.getTugBalance() + amount);
                 break;
             case USD:
                 if (participant.getUsdBalance() + amount < 0) return false;

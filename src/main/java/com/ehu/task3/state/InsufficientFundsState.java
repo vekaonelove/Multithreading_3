@@ -1,7 +1,7 @@
-package org.example.state;
+package com.ehu.task3.state;
 
-import org.example.Currency;
-import org.example.Participant;
+import com.ehu.task3.entity.Currency;
+import com.ehu.task3.entity.Participant;
 
 public class InsufficientFundsState implements ParticipantState {
     @Override

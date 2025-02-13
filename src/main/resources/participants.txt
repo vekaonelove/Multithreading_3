@@ -1,0 +1,5 @@
+TraderA, 10000, 10, 5
+TraderB, 20000, 2, 10
+TraderC, 5000, 8, 20
+TraderD, 15000, 5, 7
+TraderE, 12000, 3, 15
